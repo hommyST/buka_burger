@@ -1,0 +1,75 @@
+:root {
+  color-scheme: dark;
+  font-family: 'Courier New', Courier, monospace;
+  /* scrollbar-gutter: stable; */
+
+  --brand: hotpink;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  height: 4rem;
+  background-color: #1a237e;
+}
+
+main {
+  max-width: 700px;
+  margin-inline: auto;
+  padding: 1.5rem 1rem;
+}
+
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-bottom: 1px solid var(--brand);
+}
+
+
+
+
+
+
+
+
+/* FUNNY */
+.funny {
+  position: fixed;
+  opacity: 0.5;
+}
+#funnyRect1 {
+  transform-origin: center;
+  animation: rotate2 7s infinite alternate;
+}
+#funnyRect2 {
+  transform-origin: center;
+  animation: rotate2 3s infinite;
+}
+#funnyRect3 {
+  transform-origin: center;
+  animation: transform2 3s infinite alternate;
+}
+
+@keyframes rotate2 {
+  from {
+    rotate: 0deg;
+    fill: #9c27b0;
+  }
+  to {
+    rotate: 2turn;
+    fill: #00e5ff;
+  }
+}
+
+@keyframes transform2 {
+  from {
+    scale: 0 1;
+    fill: blue;
+  }
+  to {
+    scale: 1 1;
+    fill: hotpink;
+  }
+}
